@@ -18,7 +18,7 @@ namespace UzayOyunuTGY.Spawners
         }
         private void Start()
         {
-            Spawn(5);
+            Spawn(1);
             GameManager.Instance.OnAsteroidDestroyed += HandleOnOnAsteroidDestroyed;
 
         }
@@ -34,12 +34,18 @@ namespace UzayOyunuTGY.Spawners
             {
                 asteroidList.RemoveAt(0);
             }
-
-            if (asteroidList.Count <= GameManager.Instance.Difficulty)
+            if(asteroidList.Count==0)
             {
                 GameManager.Instance.Difficulty++;
-                Spawn(GameManager.Instance.Difficulty * 5);
+                Spawn(GameManager.Instance.Difficulty * 1);
             }
+
+
+            //if (asteroidList.Count < GameManager.Instance.Difficulty)
+            //{
+            //    GameManager.Instance.Difficulty++;
+            //    Spawn(GameManager.Instance.Difficulty * 1);
+            //}
 
         }
 
