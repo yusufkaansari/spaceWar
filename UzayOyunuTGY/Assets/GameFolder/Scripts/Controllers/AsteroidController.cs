@@ -11,6 +11,7 @@ namespace UzayOyunuTGY.Controllers
         Rigidbody2D _rigidbody2D;
         Mover _mover;
         [SerializeField] ExplosionController _explosion;
+        
 
         private void Awake()
         {
@@ -29,11 +30,12 @@ namespace UzayOyunuTGY.Controllers
             if (enemy != null)
             {
                 if (collision.gameObject.tag == "destroyable")
-                {
+                {                                      
                     Transform tempTransform = enemy.gameObject.transform;
                     Destroy(enemy.gameObject);
                     _explosion.transform.localScale = _explosion.ExplosionScale(enemy.gameObject);
                     Instantiate(_explosion, tempTransform.transform.position, Quaternion.identity, GameObject.Find("Bullets").transform);
+
                 }
             }
         }        

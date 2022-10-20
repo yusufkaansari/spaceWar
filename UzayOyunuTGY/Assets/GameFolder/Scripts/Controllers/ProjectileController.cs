@@ -32,6 +32,7 @@ namespace UzayOyunuTGY.Controllers
             {
                 if (collision.gameObject.tag == "destroyable")
                 {
+                    GameManager.Instance.CountAsteroid();
                     Transform tempTransform = enemy.gameObject.transform;
                     Destroy(enemy.gameObject);
                     _explosion.transform.localScale =_explosion.ExplosionScale(enemy.gameObject);
