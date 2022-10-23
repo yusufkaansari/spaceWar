@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UzayOyunuTGY.Controllers;
+using UzayOyunuTGY.Spawners;
 using UzayOyunuTGY.Utilities;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] int score;
+    int score;
     [SerializeField] int _difficulty=1;
+
+    
 
     public int Difficulty
     {
@@ -55,6 +58,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        
         score = 0;
         OnGameStarted?.Invoke();
     }

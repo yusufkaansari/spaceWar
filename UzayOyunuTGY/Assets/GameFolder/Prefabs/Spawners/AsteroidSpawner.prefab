@@ -43,4 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e5d3c976175f64ba2dccd4f52f229c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroid: {fileID: 3092185642681510276, guid: 5fa092ad49ec4e743bbfde2891f19278, type: 3}
+  asteroidPrefabs:
+  - {fileID: 1267730656190812650, guid: bd27079aac5af9546beb73286d9e0cd0, type: 3}
+  - {fileID: 3129824405087382652, guid: 86cf2f1a28af7cd4e9728dccb5f3f523, type: 3}
+  - {fileID: 2691857820048401577, guid: 59358b3213859ca408220e2cffc745f6, type: 3}

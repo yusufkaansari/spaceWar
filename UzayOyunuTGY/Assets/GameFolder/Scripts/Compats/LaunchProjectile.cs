@@ -12,6 +12,7 @@ namespace UzayOyunuTGY.Combats
 
         public void LaunchAction()
         {
+            GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioController>().FirePlay();
             ProjectileController newProjectile = Instantiate(projectilePrefab, projectileTransform.position, Quaternion.identity);
             newProjectile.transform.parent = GameObject.Find("Bullets").transform;
         }

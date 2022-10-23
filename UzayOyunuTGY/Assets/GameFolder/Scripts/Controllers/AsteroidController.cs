@@ -31,7 +31,8 @@ namespace UzayOyunuTGY.Controllers
             if (enemy != null)
             {
                 if (collision.gameObject.tag == "destroyable")
-                {                                      
+                {
+                    GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioController>().DestroySpaceshipPlay();
                     Transform tempTransform = enemy.gameObject.transform;
                     Destroy(enemy.gameObject);
                     _explosion.transform.localScale = _explosion.ExplosionScale(enemy.gameObject);

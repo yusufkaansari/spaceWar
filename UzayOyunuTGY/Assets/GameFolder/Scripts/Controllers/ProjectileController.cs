@@ -32,12 +32,14 @@ namespace UzayOyunuTGY.Controllers
             {
                 if (collision.gameObject.tag == "destroyable")
                 {
+                    GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioController>().DestroyAsteroidPlay();
                     GameManager.Instance.CountAsteroid();
                     GameManager.Instance.IncreaseScore(enemy._sizePoint);
                     Transform tempTransform = enemy.gameObject.transform;
                     Destroy(enemy.gameObject);
                     _explosion.transform.localScale = _explosion.ExplosionScale(enemy.gameObject);
                     Instantiate(_explosion, tempTransform.transform.position, Quaternion.identity, GameObject.Find("Bullets").transform);
+
                 }
             }
             DestroyObject(this.gameObject);
