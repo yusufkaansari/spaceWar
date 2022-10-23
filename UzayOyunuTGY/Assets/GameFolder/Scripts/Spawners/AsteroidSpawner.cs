@@ -13,21 +13,34 @@ namespace UzayOyunuTGY.Spawners
         List<AsteroidController> asteroidList = new List<AsteroidController>();
         private void Awake()
         {
-            
-            
+
         }
         private void Start()
         {
-            Spawn(1);
+            
+            //Spawn(1);
             GameManager.Instance.OnAsteroidDestroyed += HandleOnOnAsteroidDestroyed;
-
+            GameManager.Instance.OnGameStarted += SpawnAsteroid;
+            GameManager.Instance.OnGameOver += DestroyAllAsteroids;
+            
         }
-
         private void OnDisable()
         {
             GameManager.Instance.OnAsteroidDestroyed -= HandleOnOnAsteroidDestroyed;
+            GameManager.Instance.OnGameStarted -= SpawnAsteroid;
         }
-
+        void SpawnAsteroid()
+        {
+            Spawn(1);
+        }
+        void DestroyAllAsteroids()
+        {
+            foreach (var astroid in asteroidList)
+            {
+                Destroy(astroid.gameObject);
+            }
+            asteroidList.Clear();
+        }
         private void HandleOnOnAsteroidDestroyed()
         {
             if (asteroidList.Count!=0)
@@ -40,7 +53,6 @@ namespace UzayOyunuTGY.Spawners
                 Spawn(GameManager.Instance.Difficulty * 1);
             }
 
-
             //if (asteroidList.Count < GameManager.Instance.Difficulty)
             //{
             //    GameManager.Instance.Difficulty++;
@@ -49,12 +61,8 @@ namespace UzayOyunuTGY.Spawners
 
         }
 
-        private void Update()
-        {
-            
-        }
         void Spawn(int count)
-        {
+        { 
             Vector3 position = new Vector3();
             for (int i = 0; i < count; i++)
             {
@@ -67,7 +75,7 @@ namespace UzayOyunuTGY.Spawners
                 asteroid.transform.parent = this.transform;
 
                 asteroidList.Add(asteroid);
-                
+
             }
         }
 

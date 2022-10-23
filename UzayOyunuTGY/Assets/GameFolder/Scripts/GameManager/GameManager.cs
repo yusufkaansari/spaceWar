@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UzayOyunuTGY.Controllers;
 using UzayOyunuTGY.Utilities;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] int score;
     [SerializeField] int _difficulty=1;
 
     public int Difficulty
@@ -17,6 +19,9 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance { get; private set; }
     public event System.Action OnAsteroidDestroyed;
+    public event System.Action<int> OnScoreChanged;
+    public event System.Action OnGameStarted;
+    public event System.Action OnGameOver;
     private void Awake()
     {
         SingletonThisGameObject();
@@ -38,7 +43,25 @@ public class GameManager : MonoBehaviour
 
     public void CountAsteroid()
     {
+        
         OnAsteroidDestroyed?.Invoke();
+        
+    }
+    public void IncreaseScore(int sizePoint)
+    {
+        score += sizePoint;
+        OnScoreChanged?.Invoke(score);
     }
 
+    public void StartGame()
+    {
+        score = 0;
+        OnGameStarted?.Invoke();
+    }
+
+    public void SetGameOver()
+    {
+        OnGameOver?.Invoke();
+        
+    }
 }

@@ -12,6 +12,7 @@ namespace UzayOyunuTGY.Controllers
         Mover _mover;
         [SerializeField] ExplosionController _explosion;
         
+        [SerializeField] public int _sizePoint;
 
         private void Awake()
         {
@@ -35,7 +36,7 @@ namespace UzayOyunuTGY.Controllers
                     Destroy(enemy.gameObject);
                     _explosion.transform.localScale = _explosion.ExplosionScale(enemy.gameObject);
                     Instantiate(_explosion, tempTransform.transform.position, Quaternion.identity, GameObject.Find("Bullets").transform);
-
+                    GameManager.Instance.SetGameOver();
                 }
             }
         }        
