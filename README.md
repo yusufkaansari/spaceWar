@@ -11,18 +11,18 @@ Gameplay </br>
 <img src="/Screenshots/gameplay.gif" alt="Screenshot" title="Screenshot"> </br>
 Start Menu </br>
 
-<img src="/Screenshots/scshot1.png" alt="Screenshot" title="Screenshot"> </br>
+<img src="/Screenshots/scshot1.jpg" alt="Screenshot" title="Screenshot"> </br>
 
 Game </br>
 
-<img src="/Screenshots/scshot2.png" alt="Screenshot" title="Screenshot"> </br>
+<img src="/Screenshots/scshot2.jpg" alt="Screenshot" title="Screenshot"> </br>
 
-<img src="/Screenshots/scshot3.png" alt="Screenshot" title="Screenshot"> </br>
+<img src="/Screenshots/scshot3.jpg" alt="Screenshot" title="Screenshot"> </br>
 
-<img src="/Screenshots/scshot4.png" alt="Screenshot" title="Screenshot"> </br>
+<img src="/Screenshots/scshot4.jpg" alt="Screenshot" title="Screenshot"> </br>
 Game Over  </br>
 
-<img src="/Screenshots/scshot5.png" alt="Screenshot" title="Screenshot">
+<img src="/Screenshots/scshot5.jpg" alt="Screenshot" title="Screenshot">
 
 
 ## Building
