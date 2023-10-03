@@ -26,11 +26,11 @@ namespace UzayOyunuTGY.Controllers
         {
             Vector2 [] colliderpoints;
             colliderpoints = _edgeCollider.points;
-            colliderpoints[0] = new Vector2(EkranHesaplayicisi.Sag, EkranHesaplayicisi.Ust);
-            colliderpoints[1] = new Vector2(EkranHesaplayicisi.Sag, EkranHesaplayicisi.Alt);
-            colliderpoints[2] = new Vector2(EkranHesaplayicisi.Sol, EkranHesaplayicisi.Alt);
-            colliderpoints[3] = new Vector2(EkranHesaplayicisi.Sol, EkranHesaplayicisi.Ust);
-            colliderpoints[4] = colliderpoints[0];
+            colliderpoints[0] = new Vector2(EkranHesaplayicisi.Sol - 0.128f, EkranHesaplayicisi.Alt);
+            colliderpoints[1] = new Vector2(EkranHesaplayicisi.Sol, EkranHesaplayicisi.Ust);
+            colliderpoints[2] = new Vector2(EkranHesaplayicisi.Sag, EkranHesaplayicisi.Ust);
+            colliderpoints[3] = new Vector2(EkranHesaplayicisi.Sag + 0.128f, EkranHesaplayicisi.Alt);
+            colliderpoints[4] = colliderpoints[0] - new Vector2(0,0.128f);
 
             _edgeCollider.points = colliderpoints;
         }

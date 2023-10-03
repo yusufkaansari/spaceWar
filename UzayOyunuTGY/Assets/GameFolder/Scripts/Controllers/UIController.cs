@@ -38,11 +38,11 @@ namespace UzayOyunuTGY.Controllers
             scoreText.gameObject.SetActive(true);
             gameNameText.gameObject.SetActive(false);
             gameOverText.gameObject.SetActive(false);
-            scoreText.text = $"PUAN: 0";
+            scoreText.text = $"SCORE: 0";
         }
         void HandleOnScoreChanged(int score = 0)
         {
-            scoreText.text = $"PUAN: {score}";
+            scoreText.text = $"SCORE: {score}";
         }
         void HandleOnGameOver()
         {

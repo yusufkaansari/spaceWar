@@ -571,7 +571,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'PUAN: 0'
+  m_Text: 'SCORE: 0'
 --- !u!222 &823216138
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -744,7 +744,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: OYUN BITTI
+  m_Text: GAME OVER
 --- !u!222 &1084006735
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -899,7 +899,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ec6aee0587b66d7428b0ad652448e76d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1053,7 +1053,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: UZAY SAVASI
+  m_Text: SPACE WAR
 --- !u!222 &2121874050
 CanvasRenderer:
   m_ObjectHideFlags: 0

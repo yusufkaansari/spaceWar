@@ -1,8 +1,30 @@
-# SpaceWarTurkcellGYUnity
-## Turkcell Gelecegi Yazanlar Unity Project
-### Made with Unity3D version 2020.3.38f1
+# Space War
 
-![ScreenPhoto1](https://user-images.githubusercontent.com/23453984/197481744-29d9ca09-44c5-4181-ba23-c54095784a8c.png)
-![ScreenPhoto2](https://user-images.githubusercontent.com/23453984/197481761-6256c9ae-ea87-432d-95ee-8c4aa3fe7853.png)
-![ScreenPhoto3](https://user-images.githubusercontent.com/23453984/197481780-68a56331-021c-4ea2-a5ec-93dfb9597844.png)
-![ScreenPhoto4](https://user-images.githubusercontent.com/23453984/197481790-94531802-8b33-4279-ae73-126d24ec71fb.png)
+## Introduction
+I made this game while I was studying the Unity3D course based on: [Unity 301 - Uzay Savaşı Oyunu](https://gelecegiyazanlar.turkcell.com.tr/konu/unity) </br>
+Play it on the web here: [Space War](https://yusufkaan298.itch.io/space-war)
+
+## Screenshots
+
+Gameplay </br>
+
+<img src="/Screenshots/gameplay.gif" alt="Screenshot" title="Screenshot"> </br>
+Start Menu </br>
+
+<img src="/Screenshots/scshot1.png" alt="Screenshot" title="Screenshot"> </br>
+
+Game </br>
+
+<img src="/Screenshots/scshot2.png" alt="Screenshot" title="Screenshot"> </br>
+
+<img src="/Screenshots/scshot3.png" alt="Screenshot" title="Screenshot"> </br>
+
+<img src="/Screenshots/scshot4.png" alt="Screenshot" title="Screenshot"> </br>
+Game Over  </br>
+
+<img src="/Screenshots/scshot5.png" alt="Screenshot" title="Screenshot">
+
+
+## Building
+Requirements:
+* Unity 2020.3.38f1
